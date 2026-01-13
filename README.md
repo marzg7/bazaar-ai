@@ -14,6 +14,7 @@
   </a>
 </p>
 
+
 With Bazaar-AI, students can experiment with different RL approaches—from simple heuristics to Monte Carlo Tree Search to deep reinforcement learning—all within a rich, strategic environment.
 
 ## Why Jaipur?
@@ -121,7 +122,7 @@ This makes it easy to identify where an agent's strategy succeeds or fails, and 
 
 ### 1. Installation
 
-First, install the library:
+First, clone the repository.
 
 ```bash
 pip install bazaar-ai
@@ -131,19 +132,28 @@ pip install bazaar-ai
 
 Run a game between the built-in agents:
 
+**For Linux-Based Systems**:
+
 ```bash
-# from the directory with your agents/ folder
-bazaar-simulate
+cd bazaar-ai
+bash launch-bazaar-ai
 ```
 
-This will start a local web server and open your browser to the simulator. You can select different agents and watch them compete.
+**For Windows-Based Systems**:
+
+```
+cd bazaar-ai
+.\launch-bazaar-ai.bat
+```
+
+This will start a local web server and open your browser to the UI. You can select different agents and watch them compete.
 
 ### 3. Build Your Own Agent
 Create a directory to store your agents called `agents`. Create a new file in `agents/my_agent.py`:
 
 ```python
-from bazaar_ai.trader import Trader, TraderAction
-from bazaar_ai.market import MarketObservation
+from backend.trader import Trader, TraderAction
+from backend.market import MarketObservation
 
 class MyAgent(Trader):
     def __init__(self, seed, name):
