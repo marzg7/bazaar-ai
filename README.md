@@ -125,7 +125,7 @@ This makes it easy to identify where an agent's strategy succeeds or fails, and 
 First, clone the repository.
 
 ```bash
-pip install bazaar-ai
+git clone https://github.com/chandra-gummaluru/bazaar-ai.git
 ```
 
 ### 2. Try the Demo
