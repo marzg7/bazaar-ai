@@ -42,8 +42,8 @@ The framework is built on Arelai, providing a clean object-oriented structure fo
 Implementing your own agent is straightforward. Just extend the `Trader` class and override two key methods:
 
 ```python
-from bazaar_ai.trader import Trader, TraderAction
-from bazaar_ai.market import MarketObservation
+from backend.trader import Trader, TraderAction
+from backend.market import MarketObservation
 from typing import Optional, Callable
 
 class MyCustomAgent(Trader):
@@ -149,7 +149,7 @@ cd bazaar-ai
 This will start a local web server and open your browser to the UI. You can select different agents and watch them compete.
 
 ### 3. Build Your Own Agent
-Create a directory to store your agents called `agents`. Create a new file in `agents/my_agent.py`:
+Within the `agents` directory, create a new file in `my_agent.py`:
 
 ```python
 from backend.trader import Trader, TraderAction
