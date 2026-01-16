@@ -391,14 +391,14 @@ class BasicBazaar(Bazaar):
             GoodType.SILVER: [5, 5, 5, 5, 5],
             GoodType.FABRIC: [1, 1, 2, 2, 3, 3, 5],
             GoodType.SPICE: [1, 1, 2, 2, 3, 3, 5],
-            GoodType.LEATHER: [1, 1, 1, 1, 1, 1, 2, 3, 4],
+            GoodType.LEATHER: [4, 3, 2, 1, 1, 1, 1, 1, 1],
             GoodType.CAMEL: []
         }
 
         bonus_coins = {
-            BonusType.THREE: [3, 3, 2, 2, 2, 1, 1],
-            BonusType.FOUR: [6, 6, 5, 5, 4, 4], 
-            BonusType.FIVE: [10, 10, 9, 8, 8],
+            BonusType.THREE: [1, 1, 2, 2, 2, 3, 3],
+            BonusType.FOUR: [6, 6, 4, 4, 5, 5], 
+            BonusType.FIVE: [8, 8, 9, 10, 10],
         }
 
         camel_bonus = 5
