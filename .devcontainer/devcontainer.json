@@ -1,0 +1,20 @@
+{
+  "name": "ROB311 Jaipur (bazaar-ai)",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.11",
+  "postCreateCommand": "python -m pip install --upgrade pip && pip install -e .",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  },
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "Bazaar-AI UI (if used)",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
