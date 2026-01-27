@@ -10,7 +10,7 @@
       ]
     }
   },
-  "forwardPorts": [8000],
+  "forwardPorts": [5000],
   "portsAttributes": {
     "8000": {
       "label": "Bazaar-AI UI (if used)",
